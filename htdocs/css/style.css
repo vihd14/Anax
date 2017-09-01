@@ -100,13 +100,26 @@ article .quote {
 h1, h2, h3 {
     color: black;
     font-family: "EB Garamond";
-    font-weight: normal;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 h1 {
     font-size: 30px;
-    text-transform: uppercase;
     border-bottom: solid 1px #999;
+}
+
+a:link {
+    color: #ff7b00;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #ff7b00;
+}
+
+a:hover {
+    color: #333;
 }
 
 .site-footer {
