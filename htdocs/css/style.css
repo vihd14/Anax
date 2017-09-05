@@ -30,6 +30,7 @@ img {
     max-width: 100%;
     display: block;
     margin-bottom: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
 .figleft {
@@ -66,25 +67,24 @@ img {
 .navbar a {
     text-decoration: none;
     text-align: center;
-    font-size: 30px;
+    font-size: 36px;
     padding-left: 30px;
     padding-right: 30px;
     opacity: 1;
-    /*text-shadow: 2px 2px 4px #000000;*/
 }
 
 .navbar a:link {
-    color: #666;
+    color: #ff7b00;
 }
 
 .navbar a:visited {
-    color: #666;
+    color: #ff7b00;
 }
 
 .navbar a:hover {
     text-decoration: none;
     opacity: 0.7;
-    color: #666;
+    color: #ff7b00;
     text-shadow: 4px 4px 4px #fff;
 }
 
