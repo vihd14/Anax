@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=EB+Garamond');
 @import url('https://fonts.googleapis.com/css?family=Lora');
 
+@media only screen and (max-width: 1200px) {
+    body {
+        max-width: 100%;
+        max-height: 100%;
+        margin: 1em;
+        overflow-x: hidden;
+    }
+}
+
 html {
     background-color: #d7dee8;
     background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
