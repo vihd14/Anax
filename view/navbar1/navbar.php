@@ -4,11 +4,15 @@ namespace Viza\CNavigation;
 $urlHome  = $app->url->create("");
 $urlAbout = $app->url->create("about");
 $urlReport = $app->url->create("report");
+$urlRemServer = $app->url->create("rem");
+$urlComments = $app->url->create("comments");
 
 $menu = array(
   'home'  => array('text'=>'HOME',  'url'=>$urlHome),
   'about'  => array('text'=>'ABOUT',  'url'=>$urlAbout),
   'report' => array('text'=>'REPORT', 'url'=>$urlReport),
+  'rem' => array('text'=>'REM SERVER', 'url'=>$urlRemServer),
+  'comments' => array('text'=>'COMMENTS', 'url'=>$urlComments),
 );
 
 class CNavigation
@@ -33,6 +37,7 @@ class CNavigation
     }
 }
 
-echo CNavigation::generateMenu($menu, "navbar transparent");?>
+echo CNavigation::generateMenu($menu, "navbar transparent rm-default rm-desktop");
+// echo CNavigation::generateMenu($menu, "navbarMax rm-default rm-mobile");?>
 
 <article>

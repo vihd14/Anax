@@ -10,6 +10,7 @@ $app->router->add("", function () use ($app) {
 
     $app->response->setBody([$app->view, "render"])
                ->send();
+    exit;
 });
 
 $app->router->add("about", function () use ($app) {
@@ -20,6 +21,7 @@ $app->router->add("about", function () use ($app) {
 
     $app->response->setBody([$app->view, "render"])
                ->send();
+    exit;
 });
 
 $app->router->add("report", function () use ($app) {
@@ -30,16 +32,38 @@ $app->router->add("report", function () use ($app) {
 
     $app->response->setBody([$app->view, "render"])
                ->send();
+    exit;
 });
 
-$app->router->add("status", function () use ($app) {
-    $data = [
-        "Server" => php_uname(),
-        "PHP version" => phpversion(),
-        "Included files" => count(get_included_files()),
-        "Memory used" => memory_get_peak_usage(true),
-        "Execution time" => microtime(true) - $_SERVER['REQUEST_TIME_FLOAT'],
-    ];
+$app->router->add("rem", function () use ($app) {
+    $app->view->add("home/header", ["title" => "REM Server - Viza's page"]);
+    $app->view->add("navbar1/navbar");
+    $app->view->add("remserver/rem");
+    $app->view->add("home/footer");
 
-    $app->response->sendJson($data);
+    $app->response->setBody([$app->view, "render"])
+               ->send();
+    exit;
+});
+
+$app->router->add("comments", function () use ($app) {
+    $app->view->add("home/header", ["title" => "Comments - Viza's page"]);
+    $app->view->add("navbar1/navbar");
+    $app->view->add("comments/comments");
+    $app->view->add("home/footer");
+
+    $app->response->setBody([$app->view, "render"])
+               ->send();
+    exit;
+});
+
+$app->router->add("post-comments", function () use ($app) {
+    $app->view->add("home/header", ["title" => "Comments - Viza's page"]);
+    $app->view->add("navbar1/navbar");
+    $app->view->add("comments/post-comments");
+    $app->view->add("home/footer");
+
+    $app->response->setBody([$app->view, "render"])
+               ->send();
+    exit;
 });

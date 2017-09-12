@@ -7,6 +7,7 @@
 $urlHome  = $app->url->create("");
 $urlAbout = $app->url->create("about");
 $urlReport = $app->url->create("report");
+$urlRemServer = $app->url->create("rem");
 
 return [
 
@@ -37,6 +38,12 @@ return [
                 "text" => t("REPORT"),
                 "url" => $urlReport,
                 "title" => t("Report"),
+                "mark-if-parent" => true,
+            ],
+            "rem" => [
+                "text" => t("REM SERVER"),
+                "url" => $urlReport,
+                "title" => t("REM Server"),
                 "mark-if-parent" => true,
             ],
         ],
@@ -74,6 +81,12 @@ return [
                 "text" => t("REPORT"),
                 "url" => $urlReport,
                 "title" => t("Report"),
+                "mark-if-parent" => true,
+            ],
+            "rem" => [
+                "text" => t("REM SERVER"),
+                "url" => $urlReport,
+                "title" => t("REM Server"),
                 "mark-if-parent" => true,
             ],
         ],
