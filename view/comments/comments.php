@@ -6,7 +6,7 @@
     <p>Namn:</p>
     <input type="text" name="name"><br>
     <p>E-mail:</p>
-    <input type="text" name="e_mail"><br>
+    <input type="text" name="email"><br>
     <p>Kommentar:</p>
     <input type="text" name="content"><br>
     <input type="submit">

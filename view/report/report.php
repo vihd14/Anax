@@ -64,7 +64,17 @@ jag här att det vore ett perfekt sätt att lagra och publicera kommentarer! Lä
 nog inte kommit i mitt planerande men det ska bli en rolig utmaning att fixa ett kommentarssystem.</p>
 
 <h2>Kmom02</h2>
-<p>Redovisningstext kommer snart...</p>
+<p><strong></strong></p>
+<h3>Vilka tidigare erfarenheter har du av MVC? Använde du någon speciell källa för att läsa på om MVC?
+Kan du med egna ord förklara någon fördel med kontroller/modell-begreppet, så som du ser på det?</h3>
+<p></p>
+
+<h3>Kom du fram till vad begreppet SOLID innebar och vilka källor använde du? Kan du förklara SOLID på
+ett par rader med dina egna ord?</h3>
+
+<h3>Gick arbetet med REM servern bra och du lyckades integrera den i din me-sida?</h3>
+
+<h3>Berätta om arbetet med din kommentarsmodul, hur långt har du kommit och hur tänker du?</h3>
 
 <h2>Kmom03</h2>
 <p>Redovisningstext kommer snart...</p>
