@@ -64,17 +64,41 @@ jag här att det vore ett perfekt sätt att lagra och publicera kommentarer! Lä
 nog inte kommit i mitt planerande men det ska bli en rolig utmaning att fixa ett kommentarssystem.</p>
 
 <h2>Kmom02</h2>
-<p><strong></strong></p>
+<p><i><b>Notis:</b> Jag har inte skrivit mina vyer i markdown ännu men efter en diskussion med programansvarig fixar jag
+även det i nästa kursmoment. Nu är allt skrivet i html i vyerna men som sagt; jag löser det!</i></p>
+
 <h3>Vilka tidigare erfarenheter har du av MVC? Använde du någon speciell källa för att läsa på om MVC?
 Kan du med egna ord förklara någon fördel med kontroller/modell-begreppet, så som du ser på det?</h3>
-<p></p>
+<p>När jag först såg övningen om MVC trodde jag inte att jag använt det förut, men sedan kom jag på
+att jag visst har kommit över det förr: i kursen Webapplikationer vi läste i våras. Där jobbade man
+med det i Mithril och vad jag kan se är det inte riktigt samma struktur på det hela nu i ramverk1-kursen.</p>
+
+<p>För att läsa på om MVC inför kursmomentet läste jag den bifogade artikeln samt på wikipedia (svenska
+och engelska versionerna). Av det jag läst kan jag se några fördelar, såsom att man kan ändra saker i
+modellen som inte direkt påverkar det som är skrivet i vyerna. Detta kan vara en stor fördel om det är
+fler personer som arbetar på samma projekt, så att det inte blir pannkaka av allt när alla försöker
+ändra i samma fil.</p>
 
 <h3>Kom du fram till vad begreppet SOLID innebar och vilka källor använde du? Kan du förklara SOLID på
 ett par rader med dina egna ord?</h3>
+<p>Artiklerna på wikipedia var ganska rätt fram om vad SOLID betyder så det gick snabbt att ta reda på
+grunden i begreppet. SOLID består helt enkelt utav fem olika designprinciper som ska göra objektorienterad
+design mer förstående och flexibel. Riktlinjerna hjälper utvecklaren att skapa bättre kod utan onödiga
+implementationer med mera.</p>
 
 <h3>Gick arbetet med REM servern bra och du lyckades integrera den i din me-sida?</h3>
+<p>Det gick bra att göra övningen och jag gjorde bara samma sak för att sedan integrera REM Servern i
+min me-sida. Eftersom jag inte skrivit mina vyer i markdown fick jag göra en tillfällig lösning genom
+att länka till REM Servern under REM Server-fliken. Detta ska såklart ändras när jag fixar markdown
+i hela min sida. REM Servern fungerar i alla fall utan problem.</p>
 
 <h3>Berätta om arbetet med din kommentarsmodul, hur långt har du kommit och hur tänker du?</h3>
+<p>Mitt kommentarssystem är (som synes) inte fullt fungerande ännu. Hittills kan man skriva en
+kommentar, posta den och se sin postade kommentar. Den sparas dock inte i någon session, databas eller
+liknande. Jag tänkte vänta med det till nästa kursmoment då man ska spara kommentarerna i en databas.
+Sedan har jag inte använt MVC eller samma struktur som REM Servern ännu men även det ska fixas i nästa
+kursmoment. Jag skickar in det såhär just nu på grund av att jag vill komma vidare med nästa kursmoment.</p>
+<p>Så länge fixade jag en snygg design på kommentarssidan, så det är i alla fall fixat och klart!</p>
 
 <h2>Kmom03</h2>
 <p>Redovisningstext kommer snart...</p>
