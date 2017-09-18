@@ -1,4 +1,3 @@
-</article>
 </main>
 </body>
 <footer class="site-footer transparent">

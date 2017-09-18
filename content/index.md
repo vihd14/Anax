@@ -1,10 +1,10 @@
 ---
-title: "Viza's ramverkssida"
+title: "Home - Viza's page"
 ...
 Viza's me-sida
 =========================
 
-![Viktoria H.](src="/htdocs/image/me.jpg?w=300" class="figright")
+![Viktoria H.](../htdocs/image/me.jpg?w=300) {.figright}
 
 **Jag heter Viktoria "Viza" Haapaoja och jag läser programmet Webbprogrammering på Blekinge Tekniska Högskola.**
 

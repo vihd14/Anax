@@ -3,17 +3,16 @@
  * Routes.
  */
 require __DIR__ . "/route/internal.php";
-require __DIR__ . "/route/base.php";
 require __DIR__ . "/route/debug.php";
 require __DIR__ . "/route/flat-file-content.php";
 require __DIR__ . "/route/remserver.php";
-// require __DIR__ . "/route/404.php";
+require __DIR__ . "/route/404.php";
 
 $app->router->add("", function () use ($app) {
     $urlHome  = $app->url->create("");
     $urlAbout = $app->url->create("about");
     $urlReport = $app->url->create("report");
-    $urlRemServer = $app->url->create("rem");
+    $urlRemServer = $app->url->create("remserver");
     $urlComments = $app->url->create("comments");
     $urlPostComments = $app->url->create("post-comments");
     $navbar = <<<EOD

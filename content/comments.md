@@ -1,6 +1,10 @@
-<h1>Kommentera sidan</h1>
+---
+title: "Comments - Viza's page"
+...
+Kommentera sidan
+=========================
 
-<p>Här kommer det gå att kommentera snart...</p>
+Här kommer det gå att kommentera snart...
 
 <form class="comments" action="post-comments" method="post">
     <p>Namn:</p>

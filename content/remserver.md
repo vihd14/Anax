@@ -1,6 +1,8 @@
-REM Server - Viza's page
+---
+title: "REM Server - Viza's page"
+...
+REM Server
 ===========================================
-[Back to home page](../../htdocs/)
 
 This is a mockup server for development of applications working with a REST API. The server responds to any API endpoint, stores data and changes to the data in the user session.
 
@@ -15,8 +17,8 @@ Try it {#try}
 
 You can try out the pre-populated dataset `users`.
 
-* [Get all users](../api/users)
-* [Get the user with `id=1`](../api/users/1)
+* [Get all users](api/users)
+* [Get the user with `id=1`](api/users/1)
 
 
 

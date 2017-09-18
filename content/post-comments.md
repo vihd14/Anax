@@ -1,4 +1,4 @@
-<h2>Ny kommentar postad:</h2>
+##Ny kommentar postad:##
 
 <div class="published-comment">
     <p><b>Namn: </b><?php echo $_POST["name"]; ?><br>

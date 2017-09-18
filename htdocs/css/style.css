@@ -115,9 +115,8 @@ article {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
-article .quote {
-    padding-left: 40px;
-    padding-right: 40px;
+blockquote {
+    font-style: italic;
     color: #666;
 }
 
