@@ -8,9 +8,9 @@ Om kursen Webbaserade Ramverk 1
 
 Utdrag från kursförklaringen på dbwebb:
 
-> "Kursen Webbaserade ramverk 1, a.k.a. ramverk1, lär ut programmering och kodstrukturer med ramverk,
+> Kursen Webbaserade ramverk 1, a.k.a. ramverk1, lär ut programmering och kodstrukturer med ramverk,
 > designmönster och återanvändbara moduler samt tekniker för automatiserad testning och continuous
-> integration.i en fullstack webbmiljö."
+> integration i en fullstack webbmiljö.
 
 Man kan alltså säga att ramverk1 är en fortsättning på kursen oophp, som vi läste i våras. Det bygger vidare
 på uppbyggnaden av ramverk tillsammans med HTML, CSS (alt. SASS, LESS osv.) och PHP. Som i designkursen ingår
