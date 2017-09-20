@@ -4,12 +4,8 @@ title: "Report - Viza's page"
 Redovisningar
 =========================
 
-<!-- ![Favicon](../htdocs/image/favicon.ico) {.figright .favicon}
-
-##Kmom01##
-*Jag klistrade in min fina favicon här till höger ifall det är svårt att se vad den
-ska föreställa. Det är alltså VH, mina initialer.* -->
-
+Kmom01
+------------------------
 **Jag tänkte skriva lite om designen på min sida innan jag besvarar frågorna.**
 Bland det första jag fixar på mina hemsidor är de (fula) blåa länkarna som är standard. Jag valde
 en utstickande orange färg på både navbaren och länkarna, så de syns tydligt mot det annars neutrala
@@ -31,18 +27,17 @@ Dock tror jag inte vi kommer ha så mycket med databaser att göra i denna kurs,
 stärka mig i PHP som programmeringspråk över lag.
 
 ###Vilket blev resultatet från din mini-undersökning om vilka ramverk som för närvarande är mest populära inom PHP (ange källa var du fann informationen)?###
-Jag kikade på <a href="http://www.archer-soft.com/en/blog/top-7-best-php-frameworks-2017">denna sida</a>,
+Jag kikade på [denna sida](http://www.archer-soft.com/en/blog/top-7-best-php-frameworks-2017),
 som kom upp först när jag googlade "best frameworks for php 2017". De som listades som de sju främsta
 ramverken var följande:
-<ul>
-  <li>CakePHP</li>
-  <li>Yii</li>
-  <li>CodeIgniter</li>
-  <li>Laravel</li>
-  <li>Symfony</li>
-  <li>Phalcon</li>
-  <li>Zend</li>
-</ul>
+
+* CakePHP
+* Yii
+* CodeIgniter
+* Laravel
+* Symfony
+* Phalcon
+* Zend
 
 ###Berätta om din syn/erfarenhet generellt kring communities och specifikt communities inom opensource och programmeringsdomänen.###
 Om dessa communities inte hade funnits tror jag inte jag hade kunnat klara någon av de kurser jag läst
@@ -64,9 +59,11 @@ Just som jag skrev högre upp att vi nog inte kommer behöva använda databaser 
 jag här att det vore ett perfekt sätt att lagra och publicera kommentarer! Längre än så har jag
 nog inte kommit i mitt planerande men det ska bli en rolig utmaning att fixa ett kommentarssystem.
 
-##Kmom02##
+Kmom02
+------------------------
 *Notis: Jag har inte skrivit mina vyer i markdown ännu men efter en diskussion med programansvarig fixar jag
 även det i nästa kursmoment. Nu är allt skrivet i html i vyerna men som sagt; jag löser det!*
+***Notis2: Jag har fixat markdown inför nästa kursmoment nu!***
 
 ###Vilka tidigare erfarenheter har du av MVC? Använde du någon speciell källa för att läsa på om MVC? Kan du med egna ord förklara någon fördel med kontroller/modell-begreppet, så som du ser på det?###
 När jag först såg övningen om MVC trodde jag inte att jag använt det förut, men sedan kom jag på
@@ -87,9 +84,8 @@ implementationer med mera.
 
 ###Gick arbetet med REM servern bra och du lyckades integrera den i din me-sida?###
 Det gick bra att göra övningen och jag gjorde bara samma sak för att sedan integrera REM Servern i
-min me-sida. Eftersom jag inte skrivit mina vyer i markdown fick jag göra en tillfällig lösning genom
-att länka till REM Servern under REM Server-fliken. Detta ska såklart ändras när jag fixar markdown
-i hela min sida. REM Servern fungerar i alla fall utan problem.
+min me-sida. Jag hade ett litet problem med att datan var tom när man körde /api/users. Detta löstes
+genom att köra /init, både lokalt och på studentservern.
 
 ###Berätta om arbetet med din kommentarsmodul, hur långt har du kommit och hur tänker du?###
 Mitt kommentarssystem är (som synes) inte fullt fungerande ännu. Hittills kan man skriva en
@@ -99,17 +95,52 @@ Sedan har jag inte använt MVC eller samma struktur som REM Servern ännu men ä
 kursmoment. Jag skickar in det såhär just nu på grund av att jag vill komma vidare med nästa kursmoment.
 Så länge fixade jag en snygg design på kommentarssidan, så det är i alla fall fixat och klart!
 
-##Kmom03##
+Kmom03
+------------------------
+###Hur känns det att jobba med begreppen kring dependency injection, service locator och lazy loading?###
+Just nu vet jag inte riktigt vad jag ska säga om det... Det känns som att det blev en del copy-paste
+och att man ändrade lite småsaker i sina filer och sedan funkade allt som vanligt. Men jag antar att
+man kommer se fördelarna senare när man ska bygga vidare på DI i framtida filer. Principen verkar vara
+bra men vi har ännu inte testat på det så mycket själva, så det är svårt att reflektera över det känner jag.
+
+###Hur känns det att göra dig av med beroendet till `$app`, blir `$di` bättre?###
+Det blir i alla fall mindre kod att skriva, och såklart mindre beroende. Men som jag nämnde ovan känns
+det lite otydligt om vad som faktiskt blir "bättre". Vi får helt enkelt se senare hur det känns.
+
+###Hur känns det att återigen göra refaktoring på din me-sida, blir det förbättringar på kodstrukturen, eller bara annorlunda?###
+När man blev av med `$app` känndes det som att strukturen blev mer "clean" och lättare att tyda än innan. Annat
+än det tycker jag mest att det endast blev annorlunda. Jag antar att jag kommer se det på ett annat (förbättrat)
+sätt i kommande kursmoment när jag bygger vidare på `$di` och överger beroendet till `$app` totalt. Jag hade lite
+problem med min REM Server efter refaktoreringen, att sidan /api/users inte kunde hittas. Detta eftersom jag i
+min route2 hade satt `"mount = null"`, men efter en ändring till `mount = "api"` fungerade allt igen.
+
+###Lyckades du införa begreppen kring DI när du vidareutvecklade ditt kommentarssystem?###
+Jag väntar med att införa dessa begrepp tills nästa kursmoment, för att få in detta i tid.
+
+###Påbörjade du arbetet (hur gick det) med databasmodellen eller avvaktar du till kommande kmom?###
+Som jag svarade här ovan: jag väntar med det. Jag har lagt till modulen anax/database som förberedelse
+men jag känner att det är enklare att fixa ett fungerande kommentarssystem i kmom04. Där kommer allt
+gås igenom i övningarna så jag känner att det är smartare att implentera allt då, så att allt blir
+rätt från början.
+
+###Allmänna kommentarer kring din me-sida och dess kodstruktur?###
+Det känns som att jag får bättre och bättre koll på alla moduler och kodstrukturen överlag, ju längre
+vi kommer. Om något går fel kan jag relativt enkelt lokalisera var det är fel för att sedan lösa problemet.
+Detta plus felsökning har gjort att problemen varit få och enkla att lösa i detta kursmoment, vilket
+gör mig glad!
+
+Kmom04
+------------------------
 Redovisningstext kommer snart...
 
-##Kmom04##
+Kmom05
+------------------------
 Redovisningstext kommer snart...
 
-##Kmom05##
+Kmom06
+------------------------
 Redovisningstext kommer snart...
 
-##Kmom06##
-Redovisningstext kommer snart...
-
-##Kmom07/10##
+Kmom07/10
+------------------------
 Redovisningstext kommer snart...

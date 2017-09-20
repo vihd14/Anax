@@ -4,13 +4,6 @@ body {
     margin-bottom: 4em;
 }
 
-.main-wrap {
-    background-color: #f1f1f1;
-    margin-top: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
-}
-
 h1 {
     border-bottom: 4px double #666;
 }
@@ -19,17 +12,17 @@ h2 {
     border-bottom: 1px solid #999;
 }
 
-h3 {
+/*h3 {
     border-bottom: 1px solid #ccc;
-}
+}*/
 
 code {
     padding: 2px;
-    background-color: #e5e5e5;
+    background-color: #e2e2e2;
 }
 
 pre {
-    background-color: #e5e5e5;
+    background-color: #e2e2e2;
     padding: 0.5em;
     border-left: 2px solid #ccc;
 }

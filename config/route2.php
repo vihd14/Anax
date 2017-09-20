@@ -23,9 +23,13 @@ return [
         ],
         [
             // Keep this last since its a catch all
+            "mount" => "api",
+            "file" => __DIR__ . "/route2/remserver.php",
+        ],
+        [
+            // Keep this last since its a catch all
             "mount" => null,
             "file" => __DIR__ . "/route2/404.php",
         ],
     ],
-
 ];

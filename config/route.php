@@ -6,6 +6,7 @@ require __DIR__ . "/route/internal.php";
 require __DIR__ . "/route/debug.php";
 require __DIR__ . "/route/flat-file-content.php";
 require __DIR__ . "/route/remserver.php";
+//Keep 404 as last route.
 require __DIR__ . "/route/404.php";
 
 $app->router->add("", function () use ($app) {

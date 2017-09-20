@@ -38,4 +38,4 @@ class CNavigation
 }
 
 echo CNavigation::generateMenu($menu, "navbar transparent rm-default rm-desktop");
-// echo CNavigation::generateMenu($menu, "navbarMax rm-default rm-mobile");?>
+// echo CNavigation::generateMenu($menu, "navbarMax rm-default rm-mobile");

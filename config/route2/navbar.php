@@ -56,9 +56,6 @@ return [
         ],
     ],
 
-
-
-
     // Used as menu together with responsive menu
     // Name of this menu
     "navbarMax" => [
@@ -105,8 +102,6 @@ return [
         ],
     ],
 
-
-
     /**
      * Callback tracing the current selected menu item base on scriptname
      *
@@ -114,8 +109,6 @@ return [
     "callback" => function ($url) {
         return !strcmp($url, $this->di->get("request")->getCurrentUrl(false));
     },
-
-
 
     /**
      * Callback to check if current page is a decendant of the menuitem,
@@ -127,8 +120,6 @@ return [
         $url = $this->di->get("request")->getCurrentUrl(false);
         return !substr_compare($parent, $url, 0, strlen($parent));
     },
-
-
 
    /**
      * Callback to create the url, if needed, else comment out.

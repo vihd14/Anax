@@ -16,4 +16,4 @@ Man kan alltså säga att ramverk1 är en fortsättning på kursen oophp, som vi
 på uppbyggnaden av ramverk tillsammans med HTML, CSS (alt. SASS, LESS osv.) och PHP. Som i designkursen ingår
 även lärandet av designmönster, samt återanvändning av befintliga moduler.
 
-**Repot på GitHub: [Anax](https://github.com/vihd14/Anax "Anax")**
+**Repot på GitHub: [Anax](https://github.com/vihd14/Anax)**
