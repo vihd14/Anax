@@ -114,6 +114,10 @@ sätt i kommande kursmoment när jag bygger vidare på `$di` och överger beroen
 problem med min REM Server efter refaktoreringen, att sidan /api/users inte kunde hittas. Detta eftersom jag i
 min route2 hade satt `"mount = null"`, men efter en ändring till `mount = "api"` fungerade allt igen.
 
+Jag var även lite förvirrad när jag gjorde den andra övningen, när man skulle konfigurera routern i Anax. Det
+stod att man skulle ändra i modulen anax/page, som låg i vendormappen. Jag tycker det känns lite konstigt att
+ändra i den mappen, så jag kopierade över filerna `PageRender` och `PageRenderInterface` som låg i src/Page i vendor, till min egen src/Page. Jag har testat att göra samma ändringar både i vendor samt min egen mapp, och sidan fungerar utmärkt i båda fallen. Det känns som sagt bäst att ändra i sina egna filer samt att samla alla dessa moduler på samma ställe. Jag antar att detta var meningen från början, bara att jag var lite förvirrad.
+
 ###Lyckades du införa begreppen kring DI när du vidareutvecklade ditt kommentarssystem?###
 Jag väntar med att införa dessa begrepp tills nästa kursmoment, för att få in detta i tid.
 
