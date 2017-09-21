@@ -6,7 +6,7 @@ Viza's me-sida
 
 ![Viktoria H.](../htdocs/image/me.jpg?w=300) {.figright}
 
-**Jag heter Viktoria "Viza" Haapaoja och jag läser programmet Webbprogrammering på Blekinge Tekniska Högskola.**
+**Jag heter Viktoria "Viza" Haapaoja och jag läser programmet Webbprogrammering (Campus) på Blekinge Tekniska Högskola.**
 
 Jag kommer ursprungligen från den lilla orten/hålan Strömsholm som ligger ett par mil utanför Västerås. Hjärtat
 tillhör dock Karlskrona, där jag varit bosatt sedan sensommaren 2014.
@@ -22,10 +22,14 @@ bättre! Här har jag lärt mig grunderna i Python3, HTML, PHP, CSS, JavaScript 
 
 Under våren har jag även hoppat in i världen bestående av objektorientering i både Python och PHP. Jag har
 dock använt objektorientering och klasser i C++ förr, i mitt gamla program, men det är alltid trevligt att
-lära sig det i mer webbrelaterade progam. Sedan är det skönt att fräscha upp minnet lite igen.
+lära sig det i mer webbrelaterade program. Sedan är det skönt att fräscha upp minnet lite igen.
 
 Några saker jag gillar att göra på den lilla fritid jag har är att fotografera och måla i akvarell. Det
 har gått lite segt på den fronten senaste tiden men efter att ha införskaffat ett nytt teleobjektiv till
-kameran hoppas jag på fler fototillfällen under våren. Jag har även gått med dbwebbs fotoklubb som Mos skapat
-under våren. Vår första utflykt blev i maj då vi tog båten över till Aspö, nästa utflykt blir nu i september,
-vi får se vad Mos hittat på den här gången...
+kameran hoppas jag på fler fototillfällen under hösten. Jag har även gått med i dbwebbs fotoklubb som Mos skapat
+under våren. Vår första utflykt blev i maj då vi tog båten över till Aspö, nästa utflykt blev nyligen i september.
+Vi satte oss i några bilar och körde ut till Tjurkö över dagen för att fota bland annat en båtkyrkogård. Det
+blev en del blöta fötter på vägen dit men motiven var värda besväret.
+
+![Båt.](../htdocs/image/boat.jpg) {.figcenter}
+<center class="figcaption">*Gammal båt på Tjurkö - 16 september 2017*</center>

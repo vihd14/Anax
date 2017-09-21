@@ -22,7 +22,7 @@ return [
             "file" => __DIR__ . "/route2/flat-file-content.php",
         ],
         [
-            // Keep this last since its a catch all
+            // REM Server
             "mount" => "api",
             "file" => __DIR__ . "/route2/remserver.php",
         ],
