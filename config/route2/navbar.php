@@ -9,6 +9,7 @@ $urlAbout = $app->url->create("about");
 $urlReport = $app->url->create("report");
 $urlRemServer = $app->url->create("remserver");
 $urlComments = $app->url->create("comments");
+$urlBooks = $app->url->create("book");
 
 return [
 
@@ -51,6 +52,12 @@ return [
                 "text" => t("COMMENTS"),
                 "url" => $urlComments,
                 "title" => t("Comments"),
+                "mark-if-parent" => true,
+            ],
+            "book" => [
+                "text" => t("BOOKS"),
+                "url" => $urlBooks,
+                "title" => t("Books"),
                 "mark-if-parent" => true,
             ],
         ],
@@ -97,6 +104,12 @@ return [
                 "text" => t("COMMENTS"),
                 "url" => $urlComments,
                 "title" => t("Comments"),
+                "mark-if-parent" => true,
+            ],
+            "book" => [
+                "text" => t("BOOKS"),
+                "url" => $urlBooks,
+                "title" => t("Books"),
                 "mark-if-parent" => true,
             ],
         ],

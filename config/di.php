@@ -16,7 +16,12 @@ return [
         ],
         "response" => [
             "shared" => true,
-            "callback" => "\Anax\Response\Response",
+            // "callback" => "\Anax\Response\Response",
+            "callback" => function () {
+                $obj = new \Anax\Response\ResponseUtility();
+                $obj->setDI($this);
+                return $obj;
+            }
         ],
         "url" => [
             "shared" => true,
@@ -42,14 +47,6 @@ return [
                 return $router;
             }
         ],
-        // "router" => [
-        //     "shared" => true,
-        //     "callback" => function () {
-        //         $router = new \Anax\Route\Router();
-        //         $router->setDI($this);
-        //         return $router;
-        //     }
-        // ],
         "view" => [
             "shared" => true,
             "callback" => function () {
@@ -69,21 +66,14 @@ return [
         ],
         "session" => [
             "shared" => true,
+            "active" => true,
             "callback" => function () {
                 $session = new \Anax\Session\SessionConfigurable();
                 $session->configure("session.php");
+                $session->start();
                 return $session;
             }
         ],
-        // "navbar" => [
-        //     "shared" => true,
-        //     "callback" => function () {
-        //         $navbar = new \Anax\Navbar\Navbar();
-        //         $navbar = setDI($this);
-        //         $navbar->configure("navbar.php");
-        //         return $navbar;
-        //     }
-        // ],
         "textfilter" => [
             "shared" => true,
             "callback" => "\Anax\TextFilter\TextFilter",
@@ -133,6 +123,38 @@ return [
             "shared" => true,
             "callback" => function () {
                 $obj = new \Anax\Page\PageRender();
+                $obj->setDI($this);
+                return $obj;
+            }
+        ],
+        "htmlform" => [
+            "shared" => true,
+            "callback" => function () {
+                $htmlform = new \Anax\HTMLForm\FormModel();
+                $htmlform->setDI($this);
+                return $htmlform;
+            }
+        ],
+        "userController" => [
+            "shared" => true,
+            "callback" => function () {
+                $obj = new \Anax\User\UserController();
+                $obj->setDI($this);
+                return $obj;
+            }
+        ],
+        "db" => [
+            "shared" => true,
+            "callback" => function () {
+                $obj = new \Anax\Database\DatabaseQueryBuilder();
+                $obj->configure("database.php");
+                return $obj;
+            }
+        ],
+        "bookController" => [
+            "shared" => true,
+            "callback" => function () {
+                $obj = new \Anax\Book\BookController();
                 $obj->setDI($this);
                 return $obj;
             }

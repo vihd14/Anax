@@ -96,8 +96,8 @@ img {
     text-decoration: none;
     text-align: center;
     font-size: 1.8em;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
     opacity: 1;
 }
 
@@ -176,7 +176,9 @@ a:hover {
     border-bottom: 1px solid #A9A9A9;
 }
 
-input[type=text] {
+input {
+    font-family: "Lora";
+    font-size: 1em;
     width: 50%;
     padding: 1em 1.5em;
     margin: 8px 0;
@@ -184,26 +186,41 @@ input[type=text] {
     opacity: 0.6;
 }
 
-input[type=text]:hover {
+input:hover {
     opacity: 1;
 }
 
-input[type=text]:focus {
+input:focus {
     outline: none;
     border: 2px solid #ff7b00;
     opacity: 1;
 }
 
 input[type=button], input[type=submit], input[type=reset] {
+    max-width: 100px;
+    opacity: 1;
     background-color: #ff7b00;
     border: none;
     color: white;
-    padding: 1em 2em;
+    padding: 1em;
     text-decoration: none;
     margin: 1em 0.5em;
     cursor: pointer;
     font-family: "Lora";
     font-size: 1em;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table th {
+    text-decoration: underline;
+}
+
+table th, td {
+    padding: 1em;
+    border: 1px solid #A9A9A9;
 }
 
 .site-footer {
