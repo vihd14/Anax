@@ -22,19 +22,27 @@ class CreateUserForm extends FormModel
         $this->form->create(
             [
                 "id" => __CLASS__,
-                "legend" => "Create user",
+                // "legend" => "Create user",
             ],
             [
                 "acronym" => [
                     "type"        => "text",
+                    "label"       => "Användarnamn:",
+                ],
+
+                "email" => [
+                    "type"       => "text",
+                    "label"       => "E-mail:",
                 ],
 
                 "password" => [
                     "type"        => "password",
+                    "label"       => "Lösenord:",
                 ],
 
                 "password-again" => [
                     "type"        => "password",
+                    "label"       => "Lösenord igen:",
                     "validation" => [
                         "match" => "password"
                     ],
@@ -42,7 +50,7 @@ class CreateUserForm extends FormModel
 
                 "submit" => [
                     "type" => "submit",
-                    "value" => "Create user",
+                    "value" => "Skapa",
                     "callback" => [$this, "callbackSubmit"]
                 ],
             ]
@@ -61,11 +69,12 @@ class CreateUserForm extends FormModel
     {
         // Get values from the submitted form
         $acronym       = $this->form->value("acronym");
+        $email         = $this->form->value("email");
         $password      = $this->form->value("password");
         $passwordAgain = $this->form->value("password-again");
 
         // Check password matches
-        if ($password !== $passwordAgain ) {
+        if ($password !== $passwordAgain) {
             $this->form->rememberValues();
             $this->form->addOutput("Password did not match.");
             return false;
@@ -80,6 +89,7 @@ class CreateUserForm extends FormModel
         $user = new User();
         $user->setDb($this->di->get("db"));
         $user->acronym = $acronym;
+        $user->email = $email;
         $user->setPassword($password);
         $user->save();
 

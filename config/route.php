@@ -16,6 +16,7 @@ $app->router->add("", function () use ($app) {
     $urlRemServer = $app->url->create("remserver");
     $urlComments = $app->url->create("comments");
     $urlBooks = $app->url->create("book");
+    $urlProfile = $app->url->create("user");
     $urlPostComments = $app->url->create("post-comments");
     $navbar = <<<EOD
 <navbar>
@@ -24,7 +25,8 @@ $app->router->add("", function () use ($app) {
     <a href="$urlReport">REPORT</a>
     <a href="$urlRemServer">REM SERVER</a>
     <a href="$urlComments">COMMENTS</a>
-    <a href="$urlBooks">BOOK</a>
+    <a href="$urlBooks">BOOKS</a>
+    <a href="$urlProfile">PROFIL</a>
 </navbar>
 EOD;
 });

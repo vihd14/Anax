@@ -197,15 +197,20 @@ input:focus {
 }
 
 input[type=button], input[type=submit], input[type=reset] {
-    max-width: 100px;
+    max-width: 120px;
     opacity: 1;
     background-color: #ff7b00;
     border: none;
     color: white;
     padding: 1em;
     text-decoration: none;
-    margin: 1em 0.5em;
+    margin: 1em;
     cursor: pointer;
+    font-family: "Lora";
+    font-size: 1em;
+}
+
+select {
     font-family: "Lora";
     font-size: 1em;
 }

@@ -28,7 +28,7 @@ return [
         ],
         [
             // Add routes from userController and mount on comment/
-            "mount" => "comments",
+            "mount" => "user",
             "file" => __DIR__ . "/route2/userController.php",
         ],
         [

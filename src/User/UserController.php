@@ -39,15 +39,17 @@ class UserController implements
      */
     public function getIndex()
     {
-        $title      = "A index page";
+        $title      = "Profil - Viza's page";
         $view       = $this->di->get("view");
         $pageRender = $this->di->get("pageRender");
+        $user = new User();
+        $user->setDb($this->di->get("db"));
 
         $data = [
-            "content" => "An index page",
+            "items" => $user->findAll(),
         ];
 
-        $view->add("default2/article", $data);
+        $view->add("user/profile", $data);
 
         $pageRender->renderPage(["title" => $title]);
     }

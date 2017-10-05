@@ -7,6 +7,7 @@ $urlAbout = $app->url->create("about");
 $urlRemServer = $app->url->create("remserver");
 $urlComments = $app->url->create("comments");
 $urlBooks = $app->url->create("book");
+$urlProfile = $app->url->create("user");
 
 $menu = array(
   'home'  => array('text'=>'HOME',  'url'=>$urlHome),
@@ -15,6 +16,7 @@ $menu = array(
   'remserver' => array('text'=>'REM SERVER', 'url'=>$urlRemServer),
   'comments' => array('text'=>'COMMENTS', 'url'=>$urlComments),
   'book' => array('text'=>'BOOKS', 'url'=>$urlBooks),
+  'user' => array('text'=>'PROFIL', 'url'=>$urlProfile),
 );
 
 class CNavigation

@@ -6,8 +6,7 @@ Kommentera sidan
 
 Här kommer det gå att kommentera snart...
 
-[Logga in](comments/login)  
-[Skapa användare](comments/create)
+Du måste [logga in](user/login) för att kommentera.
 
 <form class="comments" action="post-comments" method="post">
     <p>Namn:</p>

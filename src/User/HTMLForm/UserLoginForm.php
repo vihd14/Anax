@@ -23,24 +23,33 @@ class UserLoginForm extends FormModel
         $this->form->create(
             [
                 "id" => __CLASS__,
-                "legend" => "Login user"
+                // "legend" => "Login user"
             ],
             [
                 "user" => [
                     "type"        => "text",
+                    "label"       => "Användarnamn:",
+                    //"description" => "Here you can place a description.",
+                    //"placeholder" => "Here is a placeholder",
+                ],
+
+                "email" => [
+                    "type"        => "text",
+                    "label"       => "E-mail:",
                     //"description" => "Here you can place a description.",
                     //"placeholder" => "Here is a placeholder",
                 ],
 
                 "password" => [
                     "type"        => "password",
+                    "label"       => "Lösenord:",
                     //"description" => "Here you can place a description.",
                     //"placeholder" => "Here is a placeholder",
                 ],
 
                 "submit" => [
                     "type" => "submit",
-                    "value" => "Login",
+                    "value" => "Logga in",
                     "callback" => [$this, "callbackSubmit"]
                 ],
             ]
@@ -59,34 +68,20 @@ class UserLoginForm extends FormModel
     {
         // Get values from the submitted form
         $acronym       = $this->form->value("user");
+        $email         = $this->form->value("email");
         $password      = $this->form->value("password");
-
-        // Try to login
-        // $db = $this->di->get("db");
-        // $db->connect();
-        // $user = $db->select("password")
-        //            ->from("User")
-        //            ->where("acronym = ?")
-        //            ->executeFetch([$acronym]);
-        //
-        // // $user is false if user is not found
-        // if (!$user || !password_verify($password, $user->password)) {
-        //    $this->form->rememberValues();
-        //    $this->form->addOutput("User or password did not match.");
-        //    return false;
-        // }
 
         $user = new User();
         $user->setDb($this->di->get("db"));
         $res = $user->verifyPassword($acronym, $password);
 
         if (!$res) {
-           $this->form->rememberValues();
-           $this->form->addOutput("User or password did not match.");
-           return false;
+            $this->form->rememberValues();
+            $this->form->addOutput("User or password did not match.");
+            return false;
         }
 
-        $this->form->addOutput("User " . $user->acronym . " logged in.");
+        $this->form->addOutput("User " . $acronym . " logged in.");
         return true;
     }
 }
