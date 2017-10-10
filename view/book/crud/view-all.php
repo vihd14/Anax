@@ -24,6 +24,7 @@ $urlToDelete = url("book/delete");
     <a href="<?= $urlToCreate ?>">Skapa ny</a> |
     <a href="<?= $urlToDelete ?>">Ta bort</a>
 </p>
+<p>Klicka på bokens Id för att redigera.</p>
 
 <?php if (!$items) : ?>
     <p>Inga böcker inlagda...</p>

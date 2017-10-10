@@ -5,6 +5,7 @@ namespace Anax\User\HTMLForm;
 use \Anax\HTMLForm\FormModel;
 use \Anax\DI\DIInterface;
 use \Anax\User\User;
+use \Anax\Session\Session;
 
 /**
  * Example of FormModel implementation.
@@ -29,22 +30,16 @@ class UserLoginForm extends FormModel
                 "user" => [
                     "type"        => "text",
                     "label"       => "Användarnamn:",
-                    //"description" => "Here you can place a description.",
-                    //"placeholder" => "Here is a placeholder",
                 ],
 
                 "email" => [
                     "type"        => "text",
                     "label"       => "E-mail:",
-                    //"description" => "Here you can place a description.",
-                    //"placeholder" => "Here is a placeholder",
                 ],
 
                 "password" => [
                     "type"        => "password",
                     "label"       => "Lösenord:",
-                    //"description" => "Here you can place a description.",
-                    //"placeholder" => "Here is a placeholder",
                 ],
 
                 "submit" => [

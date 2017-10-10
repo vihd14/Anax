@@ -15,12 +15,8 @@ $items = isset($items) ? $items : null;
 // Create urls for navigation
 $urlToViewItems = url("comments");
 
-
-
 ?><h1>Skriv en kommentar</h1>
 
-<?= $form ?>
+<a href="<?= $urlToViewItems ?>">Visa tidigare kommentarer</a>
 
-<p>
-    <a href="<?= $urlToViewItems ?>">Visa alla</a>
-</p>
+<?= $form ?>

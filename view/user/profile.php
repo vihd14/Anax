@@ -3,7 +3,7 @@
 namespace Anax\View;
 
 /**
- * View to display all books.
+ * View to display profile page.
  */
 // Show all incoming variables/functions
 //var_dump(get_defined_functions());
@@ -15,8 +15,6 @@ $items = isset($items) ? $items : null;
 // Create urls for navigation
 $urlToLogin = url("user/login");
 $urlToCreate = url("user/create");
-
-
 
 ?><h1>Profil</h1>
 
@@ -31,20 +29,3 @@ $urlToCreate = url("user/create");
     return;
 endif;
 ?>
-
-<!-- <table>
-    <tr>
-        <th>Id</th>
-        <th>Titel</th>
-        <th>Författare</th>
-    </tr>
-    <?php foreach ($items as $item) : ?>
-    <tr>
-        <td>
-            <a href="<?= url("book/update/{$item->id}"); ?>"><?= $item->id ?></a>
-        </td>
-        <td><?= $item->column1 ?></td>
-        <td><?= $item->column2 ?></td>
-    </tr>
-    <?php endforeach; ?>
-</table> -->

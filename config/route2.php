@@ -27,7 +27,7 @@ return [
             "file" => __DIR__ . "/route2/remserver.php",
         ],
         [
-            // Add routes from userController and mount on comment/
+            // Add routes from userController and mount on user/
             "mount" => "user",
             "file" => __DIR__ . "/route2/userController.php",
         ],
@@ -35,6 +35,11 @@ return [
             // Add routes from bookController and mount on book/
             "mount" => "book",
             "file" => __DIR__ . "/route2/bookController.php",
+        ],
+        [
+            // Add routes from bookController and mount on comments/
+            "mount" => "comments",
+            "file" => __DIR__ . "/route2/commentController.php",
         ],
         [
             // Keep this last since its a catch all

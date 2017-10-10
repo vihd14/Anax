@@ -3,7 +3,7 @@
 namespace Anax\View;
 
 /**
- * View to display all books.
+ * View to display all comments.
  */
 // Show all incoming variables/functions
 //var_dump(get_defined_functions());
@@ -21,8 +21,7 @@ $urlToDelete = url("comments/delete");
 ?><h1>Kommentarer</h1>
 
 <p>
-    <a href="<?= $urlToCreate ?>">Skapa ny kommentar</a> |
-    <!-- <a href="<?= $urlToDelete ?>">Ta bort</a> -->
+    <a href="<?= $urlToCreate ?>">Skriv ny kommentar</a>
 </p>
 
 <?php if (!$items) : ?>
@@ -31,20 +30,3 @@ $urlToDelete = url("comments/delete");
     return;
 endif;
 ?>
-
-<!-- <table>
-    <tr>
-        <th>Id</th>
-        <th>Titel</th>
-        <th>Författare</th>
-    </tr>
-    <?php foreach ($items as $item) : ?>
-    <tr>
-        <td>
-            <a href="<?= url("book/update/{$item->id}"); ?>"><?= $item->id ?></a>
-        </td>
-        <td><?= $item->column1 ?></td>
-        <td><?= $item->column2 ?></td>
-    </tr>
-    <?php endforeach; ?>
-</table> -->
