@@ -159,6 +159,17 @@ fieldset {
     border: none;
 }
 
+.posted-comment {
+    border: 1px solid #A9A9A9;
+    padding: 0 1em 1em;
+    margin-bottom: 1em;
+}
+
+.comment-text {
+    border-top: 1px solid #A9A9A9;
+    padding-top: 1em;
+}
+
 input, textarea {
     font-family: "Lora";
     font-size: 1em;
@@ -169,11 +180,11 @@ input, textarea {
     opacity: 0.6;
 }
 
-input:hover {
+input:hover, textarea:hover {
     opacity: 1;
 }
 
-input:focus {
+input:focus, textarea:focus {
     outline: none;
     border: 2px solid #ff7b00;
     opacity: 1;

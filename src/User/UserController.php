@@ -55,6 +55,33 @@ class UserController implements
     }
 
 
+    /**
+     * Description.
+     *
+     * @param datatype $variable Description
+     *
+     * @throws Exception
+     *
+     * @return void
+     */
+    public function getLogout()
+    {
+        $title      = "Logged out - Viza's page";
+        $view       = $this->di->get("view");
+        $pageRender = $this->di->get("pageRender");
+        $user = new User();
+        $user->setDb($this->di->get("db"));
+
+        $data = [
+            "items" => $user->findAll(),
+        ];
+
+        $view->add("user/logout", $data);
+
+        $pageRender->renderPage(["title" => $title]);
+    }
+
+
 
     /**
      * Description.

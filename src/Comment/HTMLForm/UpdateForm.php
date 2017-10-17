@@ -42,7 +42,7 @@ class UpdateForm extends FormModel
                 ],
 
                 "text" => [
-                    "type" => "text",
+                    "type" => "textarea",
                     "label" => "Kommentar:",
                     "validation" => ["not_empty"],
                     "value" => $comment->text,
@@ -50,7 +50,7 @@ class UpdateForm extends FormModel
 
                 "submit" => [
                     "type" => "submit",
-                    "value" => "Spara ändringar",
+                    "value" => "Spara",
                     "callback" => [$this, "callbackSubmit"]
                 ],
 
@@ -95,6 +95,6 @@ class UpdateForm extends FormModel
         $comment->email = $this->form->value("email");
         $comment->text = $this->form->value("text");
         $comment->save();
-        $this->di->get("response")->redirect("comment/update/{$comment->id}");
+        $this->di->get("response")->redirect("comments");
     }
 }

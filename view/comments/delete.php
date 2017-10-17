@@ -19,5 +19,5 @@ $urlToView = url("comments");
 <?= $form ?>
 
 <p>
-    <a href="<?= $urlToView ?>">Visa alla</a>
+    <a href="<?= $urlToView ?>">Tillbaka</a>
 </p>

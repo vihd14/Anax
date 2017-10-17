@@ -120,7 +120,7 @@ class CommentController implements
             "form" => $form->getHTML(),
         ];
 
-        $view->add("comment/update", $data);
+        $view->add("comments/update", $data);
 
         $pageRender->renderPage(["title" => $title]);
     }

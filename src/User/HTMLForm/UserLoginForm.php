@@ -62,10 +62,12 @@ class UserLoginForm extends FormModel
     public function callbackSubmit()
     {
         // Get values from the submitted form
+        $id            = $this->form->value("id");
         $acronym       = $this->form->value("user");
         $email         = $this->form->value("email");
         $password      = $this->form->value("password");
 
+        $session = new Session();
         $user = new User();
         $user->setDb($this->di->get("db"));
         $res = $user->verifyPassword($acronym, $password);
@@ -74,9 +76,17 @@ class UserLoginForm extends FormModel
             $this->form->rememberValues();
             $this->form->addOutput("User or password did not match.");
             return false;
+        } elseif ($session->has("id")) {
+            $this->form->addOutput("User already logged in.");
+            return false;
         }
 
-        $this->form->addOutput("User " . $acronym . " logged in.");
+        $session->set("id", $id);
+        $session->set("user", $acronym);
+        $session->set("email", $email);
+        $session->set("password", $password);
+        $this->di->get("response")->redirect("user");
         return true;
+        exit;
     }
 }

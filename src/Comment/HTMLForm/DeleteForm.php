@@ -54,7 +54,7 @@ class DeleteForm extends FormModel
 
         $comments = ["-1" => "Välj ett objekt..."];
         foreach ($comment->findAll() as $obj) {
-            $comments[$obj->id] = "{$obj->column1} ({$obj->id})";
+            $comments[$obj->id] = "{$obj->email} ({$obj->id})";
         }
 
         return $comments;

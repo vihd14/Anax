@@ -11,6 +11,12 @@ return [
             "callable" => ["userController", "getIndex"],
         ],
         [
+            "info" => "Logout a user.",
+            "requestMethod" => "get|post",
+            "path" => "logout",
+            "callable" => ["userController", "getLogout"],
+        ],
+        [
             "info" => "Login a user.",
             "requestMethod" => "get|post",
             "path" => "login",
