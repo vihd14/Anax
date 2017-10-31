@@ -1,15 +1,15 @@
 <?php
 
-namespace Anax\Comment\HTMLForm;
+namespace Anax\User\HTMLForm;
 
 use \Anax\HTMLForm\FormModel;
 use \Anax\DI\DIInterface;
-use \Anax\Comment\Comment;
+use \Anax\User\User;
 
 /**
- * Form to delete an item.
+ * Form to delete a user.
  */
-class DeleteForm extends FormModel
+class DeleteUserForm extends FormModel
 {
     /**
      * Constructor injects with DI container.
@@ -25,15 +25,14 @@ class DeleteForm extends FormModel
                 // "legend" => "Delete an item",
             ],
             [
-                // "select" => [
-                //     "type"        => "select",
-                //     "label"       => "",
-                //
-                // ],
+                "select" => [
+                    "type"        => "select",
+                    "label"       => "",
+                    "options"     => $this->getAllItems(),
+                ],
 
                 "submit" => [
                     "type" => "submit",
-                    "options"     => $this->getAllItems(),
                     "value" => "Ta bort",
                     "callback" => [$this, "callbackSubmit"]
                 ],
@@ -50,15 +49,15 @@ class DeleteForm extends FormModel
      */
     protected function getAllItems()
     {
-        $comment = new Comment();
-        $comment->setDb($this->di->get("db"));
+        $user = new User();
+        $user->setDb($this->di->get("db"));
 
-        $comments = ["-1" => "Välj ett objekt..."];
-        foreach ($comment->findAll() as $obj) {
-            $comments[$obj->id] = "{$obj->email} ({$obj->id})";
+        $users = ["-1" => "Välj ett objekt..."];
+        foreach ($user->findAll() as $obj) {
+            $users[$obj->id] = "{$obj->acronym} ({$obj->id})";
         }
 
-        return $comments;
+        return $users;
     }
 
 
@@ -71,10 +70,10 @@ class DeleteForm extends FormModel
      */
     public function callbackSubmit()
     {
-        $comment = new Comment();
-        $comment->setDb($this->di->get("db"));
-        $comment->find("id", $this->form->value("select"));
-        $comment->delete();
-        $this->di->get("response")->redirect("comments");
+        $user = new User();
+        $user->setDb($this->di->get("db"));
+        $user->find("id", $this->form->value("select"));
+        $user->delete();
+        $this->di->get("response")->redirect("user");
     }
 }

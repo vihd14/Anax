@@ -87,6 +87,6 @@ class UserLoginForm extends FormModel
         $session->set("password", $password);
         $this->di->get("response")->redirect("user");
         return true;
-        exit;
+        //exit;
     }
 }

@@ -28,6 +28,31 @@
     }
 }
 
+/* Media queries for .users-list-admin */
+@media (min-width: 500px) {
+    .users-list-admin {
+        flex: 0 0 48.0%;
+    }
+}
+
+@media (min-width: 700px) {
+    .users-list-admin {
+        flex: 0 0 31.3333333333333%;
+    }
+}
+
+@media (min-width: 980px) {
+    .users-list-admin {
+        flex: 0 0 23.0%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .users-list-admin {
+        flex: 0 0 18.0%;
+    }
+}
+
 html {
     background-color: #d7dee8;
     background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
@@ -163,6 +188,24 @@ fieldset {
     border: 1px solid #A9A9A9;
     padding: 0 1em 1em;
     margin-bottom: 1em;
+}
+
+.admin-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.users-list-admin {
+    display: inline-grid;
+    text-align: center;
+    box-sizing: border-box;
+    max-width: 40%;
+    border: 1px solid #A9A9A9;
+    padding: 1em;
+    margin: 0 0.5% 10px;
+    flex: 0 0 98%;
 }
 
 .comment-text {

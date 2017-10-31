@@ -19,7 +19,7 @@ return [
         [
             "info" => "Delete an item.",
             "requestMethod" => "get|post",
-            "path" => "delete",
+            "path" => "delete/{id:digit}",
             "callable" => ["commentController", "getPostDeleteItem"],
         ],
         [

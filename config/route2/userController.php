@@ -28,5 +28,23 @@ return [
             "path" => "create",
             "callable" => ["userController", "getPostCreateUser"],
         ],
+        [
+            "info" => "Update a user.",
+            "requestMethod" => "get|post",
+            "path" => "update/{user}",
+            "callable" => ["userController", "getPostUpdate"],
+        ],
+        [
+            "info" => "Delete an item.",
+            "requestMethod" => "get|post",
+            "path" => "delete",
+            "callable" => ["userController", "getPostDeleteItem"],
+        ],
+        [
+            "info" => "Admin page.",
+            "requestMethod" => "get|post",
+            "path" => "admin",
+            "callable" => ["userController", "getAdminPage"],
+        ],
     ]
 ];

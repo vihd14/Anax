@@ -1,6 +1,7 @@
 <?php
 
 namespace Anax\View;
+
 use \Anax\User\UserLoginForm;
 use \Anax\Session\Session;
 
@@ -19,13 +20,12 @@ $items = isset($items) ? $items : null;
 
 // Create urls for navigation
 $urlToCreate = url("comments/create");
-$urlToDelete = url("comments/delete");
+// $urlToDelete = url("comments/delete");
 
 ?><h1>Kommentarer</h1>
 
 <p>
     <a href="<?= $urlToCreate ?>">Skriv ny kommentar</a>
-    <p> <?= $session->get("user") ?></p>
 </p>
 
 <?php if (!$items) : ?>
@@ -42,8 +42,9 @@ foreach ($items as $item) : ?>
         <?php if ($session->has("user") && $session->get("email") == $item->email) : ?>
             <a href="<?= url("comments/update/{$item->id}"); ?>">Redigera</a> |
             <a href="<?= $urlToDelete ?>">Ta bort</a>
-        <?php
-            // return;
-        endif; ?>
+        <?php elseif ($session->has("user") && $session->get("user") == "admin") : ?>
+            <a href="<?= url("comments/update/{$item->id}"); ?>">Redigera</a> |
+            <a href="<?= url("comments/delete/{$item->id}"); ?>">Ta bort</a>
+        <?php endif; ?>
     </div>
 <?php endforeach;

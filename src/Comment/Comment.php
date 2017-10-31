@@ -21,5 +21,4 @@ class Comment extends ActiveRecordModel
      */
     public $id;
     public $text;
-
 }
