@@ -20,5 +20,6 @@ class Comment extends ActiveRecordModel
      * @var integer $id primary key auto incremented.
      */
     public $id;
+    public $email;
     public $text;
 }

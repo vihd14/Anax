@@ -39,12 +39,10 @@ foreach ($items as $item) : ?>
         <p class="comment-id"><?= $item->id ?>.</p>
         <p>E-mail: <?= $item->email ?></p>
         <p class="comment-text"><?= $item->text ?></p>
-        <?php if ($session->has("user") && $session->get("email") == $item->email) : ?>
-            <a href="<?= url("comments/update/{$item->id}"); ?>">Redigera</a> |
-            <a href="<?= $urlToDelete ?>">Ta bort</a>
-        <?php elseif ($session->has("user") && $session->get("user") == "admin") : ?>
+        <?php if ($session->has("user") && $session->get("email") == $item->email || $session->get("user") == "admin") : ?>
             <a href="<?= url("comments/update/{$item->id}"); ?>">Redigera</a> |
             <a href="<?= url("comments/delete/{$item->id}"); ?>">Ta bort</a>
+        
         <?php endif; ?>
     </div>
 <?php endforeach;

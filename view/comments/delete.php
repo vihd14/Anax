@@ -20,7 +20,7 @@ $urlToView = url("comments");
 
 <?php  ?>
 
-<!-- <?= $form ?> -->
+<?= $form ?>
 
 <p>
     <a href="<?= $urlToView ?>">Tillbaka</a>

@@ -82,12 +82,12 @@ class CommentController implements
      *
      * @return void
      */
-    public function getPostDeleteItem()
+    public function getPostDeleteItem($id)
     {
         $title      = "Ta bort kommentar";
         $view       = $this->di->get("view");
         $pageRender = $this->di->get("pageRender");
-        $form       = new DeleteForm($this->di);
+        $form       = new DeleteForm($this->di, $id);
 
         $form->check();
 

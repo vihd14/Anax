@@ -32,10 +32,6 @@ class CNavigation
                 : null;
             $html .= "<a href='{$item['url']}' class='{$selected}'>{$item['text']}</a>\n";
         }
-
-        // foreach ($items as $item) {
-        //     $html .= "<a href='{$item['url']}'>{$item['text']}</a>\n";
-        // }
         $html .= "</nav>\n";
         return $html;
     }

@@ -16,7 +16,7 @@ class DeleteForm extends FormModel
      *
      * @param Anax\DI\DIInterface $di a service container
      */
-    public function __construct(DIInterface $di)
+    public function __construct(DIInterface $di, $id)
     {
         parent::__construct($di);
         $this->form->create(
@@ -25,15 +25,15 @@ class DeleteForm extends FormModel
                 // "legend" => "Delete an item",
             ],
             [
-                // "select" => [
-                //     "type"        => "select",
-                //     "label"       => "",
-                //
-                // ],
+                "select" => [
+                    "type"        => "select",
+                    "label"       => "",
+                    "options"     => $this->getItem($id),
+                ],
 
                 "submit" => [
                     "type" => "submit",
-                    "options"     => $this->getAllItems(),
+                    "options"     => $this->getItem($id),
                     "value" => "Ta bort",
                     "callback" => [$this, "callbackSubmit"]
                 ],
@@ -48,15 +48,19 @@ class DeleteForm extends FormModel
      *
      * @return array with key value of all items.
      */
-    protected function getAllItems()
+    protected function getItem($id)
     {
         $comment = new Comment();
         $comment->setDb($this->di->get("db"));
 
         $comments = ["-1" => "Välj ett objekt..."];
-        foreach ($comment->findAll() as $obj) {
-            $comments[$obj->id] = "{$obj->email} ({$obj->id})";
-        }
+        
+        $obj = $comment->find("id", $id);
+        $comments[$obj->id] = "{$obj->email} ({$obj->id})";
+
+        // foreach ($comment->find("id", $id) as $obj) {
+        //     $comments[$obj->id] = "{$obj->email} ({$obj->id})";
+        // }
 
         return $comments;
     }
