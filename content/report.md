@@ -135,7 +135,44 @@ gör mig glad!
 
 Kmom04
 ------------------------
-Redovisningstext kommer snart...
+**De användare som finns att testa med är:**
+
+* **doe - doe**
+* **admin -admin**
+
+###Hur gick det att integrera formulärhantering och databashantering i ditt kommentarssystem?###
+Det har tagit väldigt lång tid för mig att bli klar med detta på grund av en annan kurs som behövt så gott
+som all min tid. Men förutom det har det faktiskt gått över förväntan med integrationen. Visst var det
+lite klurigt men det känns skönt att man har koll på den kod man skrivit och vet hur allting fungerar
+och hänger ihop. Jag är relativt stolt över hur systemet blev (förutom delete-funktionen av kommentarer)
+och tycker det är enkelt att navigera mellan sidorna och skriva kommentarer samt skapa användare. Det här
+med delete-funktionen på kommentarerna gillar jag inte riktigt upplägget med att man kommer till en ny
+sida och sedan i en dropdown väljer man den kommentar man vill ta bort, vilket endast är en: den man klickade på.
+För att lösa det på något snyggare sätt hade jag behövt bygga om hela mitt kommentarssystem igen och det
+är inte riktigt något jag orkar fixa, så det får se ut som det gör. Det fungerar i alla fall.
+
+###Berätta om din syn på Active record och liknande upplägg, ser du fördelar och nackdelar?###
+Det är skönt att med hjälp av Active Record kunna få bort detta med repetetiv kod som annars lätt kan
+uppstå. Det gör allt arbete med databasen enkelt och man behöver inte tänka riktigt på själva "databas-delen",
+så att säga. Man hämtar det man behöver genom att skapa ett nytt klassobjekt, hämtar, ändrar och sparar. Klart.
+Klasser är bra grejer det.
+
+Nackdelen med detta är väl kanske att man undrar vad det är som egentligen händer bakom allt detta Active Record.
+Just nu kan jag inte se några fler nackdelar och har inte riktigt reflekterat över vad som kanske händer "bakom kulisserna" men vi får se, det kanske kommer upp något mer negativt i framtiden.
+
+###Utveckla din syn på koden du nu har i ramverket och din kommentars- och användarkod. Hur känns det?###
+Som jag nämnde tidigare tycker jag om min struktur på koden i både routes, klasser och vyer. Allt är samlat på
+sin plats och det är inte för mycket onödig kod i vyerna. Precis som det ska vara. I början hade jag lite onödigt
+många if-else statements iställer för att lägga allt i en if-sats. Det blev mycket snyggare kod och färre rader
+i vyerna. Sedan att det mesta samlas i klasserna med Active Record gör att man endast kan kalla på en variabel
+i vyn så fungerar allt, utan att stöka till det allt för mycket. Jag gillar detta upplägg med uppdelade filer
+(om än något många filer) skarpt!
+
+###Vad tror du om begreppet scaffolding, kan det vara något att kika mer på?###
+Det var ett väldigt smidigt begrepp som gör att man enkelt kan köra igenom övningarna en gång och sedan bara
+scaffolda fram koden man samlat på sig därifrån, till sitt eget projekt i anax. Annars har jag behövt köra om
+övningen igen i min anax-mapp så detta är mycket trevligare och tidssparande. Scaffolding kommer jag definitivt
+använda mer i framtiden.
 
 Kmom05
 ------------------------
