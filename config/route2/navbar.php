@@ -4,13 +4,13 @@
  *
  */
 
-$urlHome  = $app->url->create("");
-$urlAbout = $app->url->create("about");
-$urlReport = $app->url->create("report");
-$urlRemServer = $app->url->create("remserver");
-$urlComments = $app->url->create("comments");
-$urlBooks = $app->url->create("book");
-$urlProfile = $app->url->create("user");
+$urlHome  = $this->di->get("url")->create("");
+$urlAbout = $this->di->get("url")->create("about");
+$urlReport = $this->di->get("url")->create("report");
+$urlRemServer = $this->di->get("url")->create("remserver");
+$urlComments = $this->di->get("url")->create("comments");
+$urlBooks = $this->di->get("url")->create("book");
+$urlProfile = $this->di->get("url")->create("user");
 
 return [
 

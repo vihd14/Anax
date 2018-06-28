@@ -162,7 +162,7 @@ return [
         "commentController" => [
             "shared" => true,
             "callback" => function () {
-                $obj = new \Anax\Comment\CommentController();
+                $obj = new \Vihd14\Comment\CommentController();
                 $obj->setDI($this);
                 return $obj;
             }
