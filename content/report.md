@@ -177,7 +177,7 @@ använda mer i framtiden.
 Kmom05
 ------------------------
 #### Hur gick arbetet med att lyfta ut koden ur me-sidan och placera i en egen modul?
-Det gick helt okej, blev lite förvirrad av övningen med REM-servern så valde att inte lita fullt på den. I stället plockade jag ut de relevanta bitarna ur övningen och applicerade till min egen modul. Det gick bra överlag och jag hade som tur var inte vävt in mina user-klasser i kommentarssysteme, utan de arbetar var försig. Detta gjorde det enkelt att lyfta ut koden för endast kommentarerna och skapa en egen modul för det. Jag läste att vissa varit tvungna att integrera användarna i sin kommentarsmodul också men det slapp jag som tur var.
+Det gick helt okej, blev lite förvirrad av övningen med REM-servern så valde att inte lita fullt på den. I stället plockade jag ut de relevanta bitarna ur övningen och applicerade till min egen modul. Det gick bra överlag och jag hade som tur var inte vävt in mina user-klasser i kommentarssystemet, utan de arbetar var försig. Detta gjorde det enkelt att lyfta ut koden för endast kommentarerna och skapa en egen modul för det. Jag läste att vissa varit tvungna att integrera användarna i sin kommentarsmodul också men det slapp jag som tur var.
 
 #### Flöt det på bra med GitHub och kopplingen till Packagist?
 Jodå det var enkla beskrivningar på Packagists hemsida och inga konstigheter med hur man skapade en ny modul till Packagist samt hur man kopplade ihop det med GitHub.
