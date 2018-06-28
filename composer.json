@@ -26,7 +26,10 @@
         "vihd14/comments": "^1.0"
     },
     "autoload": {
-        "psr-4": {"Anax\\": "src/"},
-        "Vihd14\\": "src/"
+        "psr-4": {
+            "Anax\\": "src/",
+            "Vihd14\\": "src/"
+        }
+
     }
 }

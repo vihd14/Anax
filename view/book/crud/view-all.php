@@ -3,8 +3,8 @@
 namespace Anax\View;
 
 /**
- * View to display all books.
- */
+* View to display all books.
+*/
 // Show all incoming variables/functions
 //var_dump(get_defined_functions());
 //echo showEnvironment(get_defined_vars());
@@ -28,7 +28,7 @@ $urlToDelete = url("book/delete");
 
 <?php if (!$items) : ?>
     <p>Inga böcker inlagda...</p>
-<?php
+    <?php
     return;
 endif;
 ?>
@@ -40,12 +40,12 @@ endif;
         <th>Författare</th>
     </tr>
     <?php foreach ($items as $item) : ?>
-    <tr>
-        <td>
-            <a href="<?= url("book/update/{$item->id}"); ?>"><?= $item->id ?></a>
-        </td>
-        <td><?= $item->column1 ?></td>
-        <td><?= $item->column2 ?></td>
-    </tr>
+        <tr>
+            <td>
+                <a href="<?= url("book/update/{$item->id}"); ?>"><?= $item->id ?></a>
+            </td>
+            <td><?= $item->column1 ?></td>
+            <td><?= $item->column2 ?></td>
+        </tr>
     <?php endforeach; ?>
 </table>

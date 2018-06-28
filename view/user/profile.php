@@ -7,8 +7,8 @@ use \Anax\User\UpdateUserForm;
 use \Anax\Session\Session;
 
 /**
- * View to display profile page.
- */
+* View to display profile page.
+*/
 // Show all incoming variables/functions
 //var_dump(get_defined_functions());
 //echo showEnvironment(get_defined_vars());
@@ -44,6 +44,6 @@ $urlToAdminPage = url("user/admin");
     <p>Inte inloggad...</p>
     <a href="<?= $urlToLogin ?>">Logga in</a><br>
     <a href="<?= $urlToCreate ?>">Skapa användare</a>
-<?php
+    <?php
     return;
 endif; ?>

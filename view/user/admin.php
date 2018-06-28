@@ -7,8 +7,8 @@ use \Anax\User\UpdateUserForm;
 use \Anax\Session\Session;
 
 /**
- * View to display profile page.
- */
+* View to display profile page.
+*/
 // Show all incoming variables/functions
 //var_dump(get_defined_functions());
 //echo showEnvironment(get_defined_vars());
@@ -27,19 +27,19 @@ $items = isset($items) ? $items : null;
         <a href="<?= url("user/delete"); ?>">Ta bort användare</a>
     </h3>
     <div class="admin-grid">
-    <?php foreach ($items as $item) : ?>
-        <div class="users-list-admin">
-            <?php $emailHash = md5(strtolower(trim($item->email))); ?>
-            <img src="https://www.gravatar.com/avatar/<?= $emailHash ?>?s=200&d=retro" class="figcenter" />
-            <p><b>Användare:</b> <?= $item->acronym; ?></p>
-            <p><b>E-mail:</b> <?= $item->email; ?></p>
-            <a href="<?= url("user/update/{$item->acronym}"); ?>">Updatera profil</a>
-        </div>
-    <?php endforeach ?>
+        <?php foreach ($items as $item) : ?>
+            <div class="users-list-admin">
+                <?php $emailHash = md5(strtolower(trim($item->email))); ?>
+                <img src="https://www.gravatar.com/avatar/<?= $emailHash ?>?s=200&d=retro" class="figcenter" />
+                <p><b>Användare:</b> <?= $item->acronym; ?></p>
+                <p><b>E-mail:</b> <?= $item->email; ?></p>
+                <a href="<?= url("user/update/{$item->acronym}"); ?>">Updatera profil</a>
+            </div>
+        <?php endforeach ?>
     </div>
 
 <?php else : ?>
     <p>Du har inte tillgång till denna sida...</p>
-<?php
+    <?php
     return;
 endif; ?>

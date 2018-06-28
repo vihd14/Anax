@@ -195,7 +195,20 @@ Färre filer kanske men annars fungerar det i princip likadant som innan, förut
 
 Kmom06
 ------------------------
-Redovisningstext kommer snart...
+#### Har du någon erfarenhet av automatiserade tester och CI sedan tidigare?
+Ja jag har använt Travis, Circle CI, CodeClimate och Scrutinizer förr (säkert fler tjänster som jag ej minns) och har tagit för vana att alltid integrera Travis och CodeClimate i mina projekt. Därför hade jag redan dessa två integrerade innan detta kursmoment men jag hade inte fått med Scrutinizer, så den är nu på plats.
+
+#### Hur ser du på begreppen, bra, onödigt, nödvändigt, tidskrävande?
+Det är bara positivt från min sida. Det är skönt att låta dessa tjänster leta upp problem och förbättringar i koden så man själv slipper sitta och leta manuellt. Detta sparar massor av tid om man t.ex. håller på med större projekt (speciellt tillsammans med andra utvecklare) där man slipper lägga för mycket tid på denna typ av testning. Det blir en hel del manuell testning ändå så det är skönt att i alla fall ha detta gjort automatiskt.
+
+#### Hur stor kodtäckning lyckades du uppnå i din modul?
+Samma som förr, gjorde inga ändringar där.
+
+#### Berätta hur det gick att integrera mot de olika externa tjänsterna?
+Det gick smidigt då jag redan gjort detta x antal gånger innan. Så det gick som på räls.
+
+#### Vilken extern tjänst uppskattade du mest, eller har du förslag på ytterligare externa tjänster att använda?
+Scrutinizer är nog den mest täckande då den äver testar kodkvalitén. Innan har jag alltid använt både Travis och CodeClimate men med Scrutinizer täcker man allt som de gör tillsammans. Så jag ska nog ta och börja använda Scrutinizer lite oftare i framtiden. Sedan är det ju lite kul att ha fler badges att visa upp på sin GitHub. Det ser lite festligt ut med flera gröna badges på rad.
 
 Kmom07/10
 ------------------------

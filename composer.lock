@@ -1018,16 +1018,16 @@
         },
         {
             "name": "vihd14/comments",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vihd14/comments.git",
-                "reference": "1c80719c649f9fa6f02599e06a529c114c49a0fa"
+                "reference": "3760d005b9485cf4d5768856cb640096a35de807"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vihd14/comments/zipball/1c80719c649f9fa6f02599e06a529c114c49a0fa",
-                "reference": "1c80719c649f9fa6f02599e06a529c114c49a0fa",
+                "url": "https://api.github.com/repos/vihd14/comments/zipball/3760d005b9485cf4d5768856cb640096a35de807",
+                "reference": "3760d005b9485cf4d5768856cb640096a35de807",
                 "shasum": ""
             },
             "require": {
@@ -1064,7 +1064,7 @@
                 "micro",
                 "mvc"
             ],
-            "time": "2018-06-28T12:19:32+00:00"
+            "time": "2018-06-28T13:46:34+00:00"
         }
     ],
     "packages-dev": [],
